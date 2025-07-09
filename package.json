@@ -1,0 +1,66 @@
+{
+  "name": "v4n1ty",
+  "version": "0.0.1",
+  "description": "Multi-threaded Ethereum vanity address generator with beautiful CLI",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "v4n1ty": "./dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts",
+    "prepublishOnly": "bun run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "vanity",
+    "address",
+    "generator",
+    "cli",
+    "crypto",
+    "blockchain",
+    "multithreaded",
+    "web3",
+    "wallet"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microchipgnu/v4n1ty.git"
+  },
+  "homepage": "https://github.com/microchipgnu/v4n1ty#readme",
+  "bugs": {
+    "url": "https://github.com/microchipgnu/v4n1ty/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "viem": "^2.31.7",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.0"
+  }
+}
