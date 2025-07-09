@@ -1,6 +1,7 @@
 # V4N1TY - Ethereum Vanity Address Generator
 
-![image](https://github.com/user-attachments/assets/ff23ce54-45bf-4cfe-9fb3-d0a4c422898e)
+![Imagem de Código Carbon](https://github.com/user-attachments/assets/99e306a2-0ed3-4947-bc0b-a76a2c4c325d)
+
 
 A fast, multi-threaded Ethereum vanity address generator built with TypeScript and Bun.
 
